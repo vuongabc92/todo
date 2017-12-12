@@ -1,0 +1,28 @@
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.5.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa-arrow-down:before {content: "\f063";}
+.fa-arrow-left:before {content: "\f060";}
+.lordoftherings{position:fixed;top:0;right:0;}
+.lordoftherings>ul{list-style:none;padding:0;margin:0;}
+.lordoftherings>ul>li{width: auto;float:left;display:inline;}
+.lordoftherings>ul>li>a{float:left;width:55px;height:55px;line-height:55px;text-align:center;display:inline;background-color:rgba(0, 0, 0, 0.6);color:#fff;margin-left:1px;font-size: 17px;}
+.lordoftherings>ul>li:first-child>a{margin-left:0;}
+@media screen and (max-width: 1024px) {
+    .lordoftherings{position:absolute;}
+    .lordoftherings>ul>li{float:none;display:block;}
+    .lordoftherings>ul>li>a{display:block;width:50px;height:50px;line-height:50px;margin-left:0;margin-bottom:1px;}
+    .lordoftherings>ul>li:last-child>a{margin-bottom:0;}
+}
+@media screen and (max-width: 768px) {
+    .lordoftherings>ul>li>a{width:43px;height:43px;line-height:43px;}
+}
+@media screen and (max-width: 680px) {
+    .lordoftherings>ul>li>a{width:40px;height:40px;line-height:40px;}
+}
+@media screen and (max-width: 480px) { 
+    .lordoftherings>ul>li>a{width:37px;height:37px;line-height:37px;}
+}

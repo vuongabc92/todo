@@ -1,0 +1,146 @@
+.header {
+    height: 60px;
+    background-color: #fff;
+    border-bottom: solid 2px #007bff;
+}
+.header-inside {
+    max-width: 1220px;
+    margin: auto;
+}
+.header-nav {
+    height: 34px;
+    margin-top: 12px;
+}
+.header-register-btn {
+    margin-left: 25px;
+}
+.navlist li {
+    float: left;
+    margin-left: 25px;
+    display: inline;
+}
+.navlist li.headnav-contact,
+.navlist li.headnav-dev {
+    display: none;
+}
+.navlist>li>a {
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    color: rgb(170, 170, 170);
+}
+.navlist>li>a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.navlist>li>a:hover>span:after {
+    width: 100%;
+    background-color: currentcolor;
+}
+.navlist>li>a:hover .avatar {
+    opacity: 0.8;
+}
+.navlist>li>a>span {
+    position: relative;
+    display: inline-block;
+}
+.navlist li a span:after {
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: 0.25rem;
+    left: 0px;
+    background-color: transparent;
+    transition: width 0.2s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.2s ease;
+    content: "";
+}
+.navlist>li>a .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+/* Footer */
+.main-footer {
+    border-top: solid 2px #007bff;
+    background-color: #fff;
+}
+.footer-logo-wrap {
+    width: 40px;
+    margin: auto;
+}
+.footer-logo-wrap a {
+    float: left;
+    margin: 10px 0;
+}
+.logo-footer {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.footer-navs ul>li>a {
+    color: #888;
+}
+.footer-navs {
+    margin-bottom: 5px;
+}
+.footer-navs ul>li>a:hover {
+    color: #007bff;
+}
+.copyright {
+    margin: 10px 0;
+}
+
+.alert-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    color: #fdfdfd;
+    border-radius: 0;
+    margin-bottom: 0;
+    display: none;
+    z-index: 9999;
+}
+.alert-bar.alert-success {
+    background-color: #56bc8a;
+    border-color: #56bc8a;
+}
+.alert-bar.alert-danger {
+    background-color: #d95e40;
+    border-color: #d95e40;
+}
+
+.alert-bar button.close {
+    color: #fdfdfd;
+    top: 0;
+    opacity: .6;
+}
+.alert-bar button.close:hover {
+    color: #fdfdfd;
+    opacity: .9;
+}
+.page-container {
+    max-width: 1220px;
+    margin: auto;
+}
+@media screen and (max-width: 1024px) {
+    .header-inside {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header-inside {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .navlist li.headnav-contact,
+    .navlist li.headnav-dev {
+        display: inline;
+    }
+}

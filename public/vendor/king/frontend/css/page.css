@@ -1,0 +1,118 @@
+/*@font-face {
+    font-family: "AtlasGroteskRegular";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: local("AtlasGrotesk-Regular"), url("../fonts/atlas-grotesk/regular/AtlasGrotesk-Regular-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/atlas-grotesk/regular/AtlasGrotesk-Regular-Web.woff") format("woff"), url("../fonts/atlas-grotesk/regular/AtlasGrotesk-Regular-Web.ttf") format("truetype")
+}
+@font-face {
+    font-family: "AtlasGroteskBold";
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    src: local("AtlasGrotesk-Bold"), url("../fonts/atlas-grotesk/bold/AtlasGrotesk-Bold-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/atlas-grotesk/bold/AtlasGrotesk-Bold-Web.woff") format("woff"), url("../fonts/atlas-grotesk/bold/AtlasGrotesk-Bold-Web.ttf") format("truetype")
+}*/
+/*@font-face {
+    font-family: AtlasGroteskLight;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    src: local("AtlasGrotesk-Light"), url("../fonts/atlas-grotesk/light/AtlasGrotesk-Light-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/atlas-grotesk/light/AtlasGrotesk-Light-Web.woff") format("woff"), url("../fonts/atlas-grotesk/light/AtlasGrotesk-Light-Web.ttf") format("truetype")
+}*/
+@font-face {
+    font-family: "AtlasGroteskBlack";
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: local("AtlasGrotesk-Black"), url("../fonts/atlas-grotesk/black/AtlasGrotesk-Black-Web.eot?#iefix") format("embedded-opentype"), url("../fonts/atlas-grotesk/black/AtlasGrotesk-Black-Web.woff") format("woff"), url("../fonts/atlas-grotesk/black/AtlasGrotesk-Black-Web.ttf") format("truetype")
+}
+/* Typography Bible -------------------
+* Atlas Grotesk Regular (400)
+* Atlas Grotesk Bold (700)
+* Atlas Grotesk Black (900)
+handle italics with font-style: italic (no italics available for Black)
+------------------- */
+
+.page-header {
+    position: relative;
+    padding-bottom: 34%;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: #e5e5e5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.page-header .constraint {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.page-header .constraint h1 {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family: "AtlasGroteskBlack", "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    font-size: 9rem;
+    line-height: 9rem;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+.page-content {
+    font-size: 20px;
+}
+.page-inside {
+    padding: 0 20px;
+}
+.page-left {
+    max-width: 750px;
+    float: left;
+}
+
+@media screen and (min-width: 1220px) {
+    .page-inside {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page-header {
+        padding-bottom: 40%;
+    }
+    .page-header .constraint h1 {
+        font-size: 7rem;
+    }
+    .page-content {
+        margin-top: 0;
+    }
+    .page-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-header {
+        padding-bottom: 44%;
+    }
+    .page-header .constraint h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .page-header .constraint h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page-header .constraint h1 {
+        font-size: 3.5rem;
+    }
+}
